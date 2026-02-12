@@ -1,0 +1,6 @@
+s1 = set()
+s2 = set("freefire")
+s3 = set(["pubg","cod","freefire","pubg"])
+print(s1)
+print(s2) 
+print(s3)
