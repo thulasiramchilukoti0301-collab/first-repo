@@ -1,0 +1,26 @@
+import turtle
+
+screen = turtle.Screen()
+screen.title("Apology Message")
+screen.bgcolor("black")
+
+pen = turtle.Turtle()
+pen.hideturtle()
+pen.speed(0)
+
+def write_colored_text(text, emoji, y, size, emoji_color):
+    
+    pen.penup()
+    pen.goto(-50, y)  
+    pen.color("white")
+    pen.write(text, align="center", font=("Arial", size, "bold"))
+    
+    pen.goto(220, y)  
+    pen.color(emoji_color)
+    pen.write(emoji, align="center", font=("Arial", size, "bold"))
+
+write_colored_text("I AM REALLY SORRY PAPA", "😔", 60, 24, "yellow")
+write_colored_text("Please Forgive Me", "🙏", 10, 20, "cyan")
+write_colored_text("It Won't Happen Again", "💔", -40, 18, "blue")
+
+turtle.done()

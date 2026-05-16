@@ -1,0 +1,5 @@
+f = open("file.txt","w")
+text = input("enter text")
+f.write(text)
+f.close()
+print("text written to file successfully")

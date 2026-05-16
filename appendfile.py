@@ -1,0 +1,5 @@
+f = open("file.txt","a")
+text = input("enter text")
+f.write("\n"+text)
+f.close()
+print("text appended to file successfully")

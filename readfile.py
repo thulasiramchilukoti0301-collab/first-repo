@@ -1,0 +1,5 @@
+f = open("file.txt","r")
+text = f.read()
+print(text)
+f.close()
+print("text read from file successfully")
